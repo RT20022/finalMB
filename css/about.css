@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../font/ArialNova.ttf');
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    /* font-family: "Philosopher", sans-serif; */
+    /* font-family: "Kaushan Script", cursive;
+    font-family: "Courgette", cursive; */
+}
+p{
+    font-family: "Baskervville", serif;
+    text-align: justify;
+}
+
+.classes h2{
+    font-family: 'Times New Roman', Times, serif;
+   text-shadow: none;
+   font-weight: lighter !important;
+}
+
+.classes h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ .marquee1 h5 span{
+   color: #5A228C;
+   transition: .5s;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: transparent;
+   border: 1px solid #5A228C;
+   margin-left: 5px;
+   padding: 8px;
+}
+ .marquee2 h5 span{
+   background-color: #5A228C;
+   color: white;
+   transition: .5s;
+   font-family: 'Times New Roman', Times, serif;
+   margin-left: 5px;
+   padding: 8px;
+}
+.classes p{
+    font-family: "Baskervville", serif;
+    /* font-family: "Kaushan Script", cursive; */
+    font-size: 18px;
+    /* font-family: "Courgette", cursive; */
+}
+
+
+.commerce_mision{
+    border: 1px solid #ffffff;
+}
+.commerce_mision h2{
+    border: 3px solid #ffffff;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline;
+}
+
+.headingMission{
+    background-color: #5A228C;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.mission{
+    background: rgb(77,77,77);
+background: linear-gradient(180deg, rgba(77, 77, 77, 0.721) 20%, rgba(48, 47, 47, 0.493) 60%) , url("../images/stock4.webp");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+clip-path: polygon(0 6%, 100% 0, 100% 95%, 0% 100%);
+}
+
+.newoutcomes{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 41vw;
+}
+.newoutcomes h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #5A228C;
+}
+.triangle{
+    background-color: #5A228C;
+}
+.outcomebody{
+    background: linear-gradient(180deg, rgba(46, 46, 46, 0.466) 20%, rgba(51, 51, 51, 0.584) 60%) , url("../images/review.jpg");   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.outcomebody h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: omegle;
+}
+.outcomebody h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+@media only screen and (max-width: 786px) {
+    .newoutcomes{
+        clip-path: polygon(50% 0%, 90% 36%, 100% 99%, 0 100%, 10% 36%);
+        width: 100%;
+    }
+    
+}

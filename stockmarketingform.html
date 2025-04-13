@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Blessed</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/smform.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BYM8JRKRY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BYM8JRKRY');
+</script>
+
+<body>
+
+    <a href="./index.html" class="text-decoration-none"><i class="fa-solid fa-circle-arrow-left fs-1 mt-3 ms-5 position-absolute text-light"></i></a>
+
+    <div class="container d-flex justify-content-center align-items-center flex-column mt-5  pt-5">
+        <div class="row shadow-lg rounded-5 d-flex justify-content-center align-items-center formBg">
+            <div class="col-md-6 col-12 p-4 smform">
+                <h1 class="text-center">Stock Marketing</h1>
+                <hr class="border border-light border-1 opacity-100 w-50 m-0 mx-auto">
+                <p class=" mt-2 text-center">Register & Start Your Journey To Success</p>
+
+                <!-- Form -->
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                        <input type="text" class="form-control rounded-pill shadow-lg" name="Full Name"
+                            placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control rounded-pill shadow-lg" name="Email"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                        <input type="tel" class="form-control rounded-pill shadow-lg" name="Contact"
+                            placeholder="Enter Your Phone Number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label me-3">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" id="inlineRadio1" value="Male">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="Gender" id="inlineRadio2" value="Female">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Age</label>
+                        <input type="number" class="form-control rounded-pill shadow-lg" name="Age" placeholder="Your Age" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Address</label>
+                        <input type="text" class="form-control rounded-pill shadow-lg" name="Address"
+                            placeholder="Your Present Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Occupation</label>
+                        <input type="text" class="form-control rounded-pill shadow-lg" name="Occupation"
+                            placeholder="Doctor | Teacher | House Wife | Student" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Course</label>
+                        <select class="form-select rounded-5 shadow-lg" aria-label="Default select example" name="Course" required>
+                            <option selected>Select Course</option>
+                            <option value="Stock Marketing For Beginners">Stock Marketing For Beginners</option>
+                            <option value="Advanced Techninal Analysis">Advanced Techninal Analysis</option>
+                            <option value="Option Trading">Option Trading</option>
+                            <option value="Future & Commodities">Future & Commodities</option>
+                            <option value="Advanced Forex Trading">Advanced Forex Trading</option>
+                            <option value="Fundamental Of Companies">Fundamental Of Companies</option>
+                            <option value="Psychology For Traders">Psychology For Traders</option>
+                            <option value="Gold & Crude Oil Trading">Gold & Crude Oil Trading</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Stock Marketing Experience :</label>
+                        <output>5</output>
+                        <input type="range" class="form-control rounded-pill shadow-lg" name="Experience" min="0" max="50"
+                            step="1" oninput="this.previousElementSibling.value = this.value" required>
+                    </div>
+
+                    <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5502/stockmarketingform.html"> -->
+
+                        <button type="submit" class="btn rounded-pill px-3 fs-5 btn-outline-light shadow-lg"
+                            id="submit">Submit</button>
+
+                            <a href="MoneyBlessed-Brochure.pdf" download="MoneyBlessed-Brochure" class="d-none"></a>
+                </form>
+            </div>
+            <div class="col-md-6 col-10 justify-content-center align-items-center d-md-flex flex-column  d-none quoteAuthor">
+                <img src="./images/MBLogo.png" class="img-fluid" alt="">
+                <h6>"Let's Learn & Earn Together."</h6>
+                <p>- Money Blessed Institute</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const form = document.querySelector("#form")
+        const submitButton = document.querySelector("#submit")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwn3jJTaCrNfVj3nc53DpueK8S_l5eDRtCNBD3U1njYJcOYhzvCCCPemAyfYH3rB17hhg/exec'
+        form.addEventListener('submit', e => {
+            submitButton.disabled = true
+            e.preventDefault()
+            let requestBody = new FormData(form)
+            fetch(scriptURL, { method: 'POST', body: requestBody })
+                .then(response => {
+                    alert('Thanks For Registering', response)
+                    submitButton.disabled = false
+                    document.querySelector('a').click()
+                })
+                .catch(error => {
+                    alert('Error!', error.message)
+                    submitButton.disabled = false
+                }
+                )
+        })
+
+        
+
+
+    </script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cee8357aa9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

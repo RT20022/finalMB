@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../font/ArialNova.ttf');
+}
+
+
+.newsletter{
+position: absolute;
+z-index: 1;
+}
+.newsletter h2,p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.newsletter div{
+    background: rgb(180, 156, 235);
+    background: linear-gradient(90deg, #5A228C 19%, rgb(193, 58, 226) 76%);
+}
+
+
+footer img{
+height: 300px;
+width: 300px;
+}
+
+.lastbox{
+transform: translate(0px,-40px);
+}
+
+.lastbox h5{
+    font-family: 'Arial Nova';
+}
+
+footer h3{
+    font-family: 'Arial Nova';
+}

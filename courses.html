@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/MBLogo.png" type="image/x-icon">
+    <title>Courses</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BYM8JRKRY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2BYM8JRKRY');
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Courgette&family=Itim&family=Kaushan+Script&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap');
+
+
+    body {
+        /* background: rgb(144, 226, 189); */
+        /* background: linear-gradient(90deg, rgba(73, 235, 136, 1) 20%, rgba(255, 255, 255, 1) 100%); */
+        background: url('./images/image.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* background: rgb(70, 245, 170);
+        background: linear-gradient(135deg, rgba(70, 245, 170, 1) 0%, rgba(235, 156, 226, 1) 47%, rgba(159, 241, 234, 1) 100%); */
+        /* clip-path: polygon(0 0, 0% 100%, 54% 49%); */
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        /* clip-path: polygon(0 0, 0% 100%, 54% 49%); */
+        clip-path: polygon(50% 55%, 100% 0, 100% 100%, 50% 51%, 0 100%, 0 0);
+        z-index: -1;
+    }
+
+    .row {
+        width: 70%;
+    }
+
+    h1 {
+        font-family: "Berkshire Swash", serif;
+        font-family: "Itim", cursive;
+        font-family: "Sacramento", cursive;
+        font-family: "Philosopher", sans-serif;
+        /* font-family: "Kaushan Script", cursive; */
+        /* font-family: "Courgette", cursive; */
+        /* color: rgb(150, 31, 214); */
+    }
+
+    h6 {
+        font-family: "Philosopher", sans-serif;
+    }
+
+    p {
+        /* font-family: "Philosopher", sans-serif; */
+        /* font-family: "Sacramento", cursive !important; */
+        font-family: "Philosopher", sans-serif;
+        font-size: 18px;
+    }
+
+    button {
+        position: relative;
+        width: 240px;
+        font-family: "Berkshire Swash", serif;
+        font-family: "Itim", cursive !important;
+        font-size: 50px;
+        overflow: hidden;
+        transition: 1s !important;
+    }
+
+    /* .btn1 {
+        background-color: rgba(9, 248, 204, 0.291) !important;
+    }
+
+    .btn2 {
+        background-color: rgba(196, 9, 248, 0.291) !important;
+    } */
+
+    button::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 3px;
+        background-color: rgb(255, 255, 255);
+        left: 30px;
+        top: 0%;
+    }
+
+    button:hover {
+        transform: scale(.95);
+        transition: 1s;
+    }
+
+    .kuchbhi {
+        /* background: rgb(70, 245, 170);
+        background: linear-gradient(135deg, rgba(70, 245, 170, 1) 0%, rgba(235, 156, 226, 1) 47%, rgba(159, 241, 234, 1) 100%); */
+        /* background: rgb(239, 241, 240);
+        background: linear-gradient(90deg, rgba(239, 241, 240, 1) 0%, rgba(180, 156, 235, 1) 23%, rgba(159, 241, 234, 1) 76%, rgba(255, 255, 255, 1) 100%); */
+        background: rgb(180, 156, 235);
+         background: linear-gradient(90deg, rgb(216, 91, 248) 19%, rgba(159, 241, 234, 1) 76%);
+         
+    }
+
+    .quoteAuthor {
+        font-size: 12px;
+        transform: translate(100px);
+        /* color: white; */
+    }
+</style>
+
+<body>
+
+    <!-- NavBar -->
+    <!-- <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #3ae697;">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-center ms-md-5 ms-0" href="#">
+                <p class="navTag" style="color: rgb(179, 26, 206); text-shadow:none;"><span>Money</span><span
+                        class="navTagBlessed">Blessed</span></p>
+            </a>
+            <div class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation" onclick="burger()">
+                <div class="line1 mt-0"></div>
+                <div class="line2 mt-2"></div>
+                <div class="line3 mt-2"></div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder fs-6" aria-current="page"
+                            onclick="document.getElementById('home').scrollIntoView()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder fs-6" aria-current="page"
+                            onclick="document.getElementById('about').scrollIntoView()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder fs-6" href="./courses.html" aria-current="page">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bolder fs-6" aria-current="page" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+
+    <a href="./index.html" class="text-decoration-none"><i class="fa-solid fa-circle-arrow-left fs-1 mt-5 ms-5 position-absolute text-light"></i></a>
+
+    <div class="container mt-2 pt-5 d-flex justify-content-center">
+        <div class="row mt-5 d-flex justify-content-center align-items-center kuchbhi shadow-lg rounded-5">
+            <div class="col-md-5 col-10 py-5  rounded-5 ">
+                <h1 class="text-center">Enroll Now</h1>
+                <hr class="border border-light border-1 opacity-100 w-75 m-0 mx-auto">
+                <p class=" mt-2 text-center">What do you want to learn </p>
+                <div class=" d-flex justify-content-center align-items-center flex-column">
+                    <a href="./stockmarketingform.html" class="text-decoration-none"><button
+                            class="btn btn-lg p-4 rounded-pill text-light shadow-lg my-3 btn1 ">Stock
+                            Marketing</button></a>
+                    <a href="./commerceForm.html" class="text-decoration-none"><button
+                            class="btn btn-lg p-4 rounded-pill text-light shadow-lg btn2 ">Commerce Classes</button></a>
+                </div>
+            </div>
+            <div class="col-md-7 col-10 justify-content-center align-items-center d-md-flex flex-column d-none">
+                <img src="./images/MBLogo.png" class="img-fluid" alt="">
+                <h6 class="text-center">"Let's Learn & Earn Together."</h6>
+                <p class="quoteAuthor">- Money Blessed Institute</p>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/cee8357aa9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.blogHeading{
+    font-family: 'Times New Roman', Times, serif;
+    color:#5A228C;
+}
+
+.innerList li{
+    list-style: lower-alpha;
+}
+
+.content{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 786px) {
+    .content{
+        font-size: 16px;
+    }
+}

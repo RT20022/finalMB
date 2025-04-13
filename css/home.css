@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../font/ArialNova.ttf');
+}
+
+
+.home img{
+mix-blend-mode:multiply;
+opacity: 1;
+}
+
+.home h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: #5A228C;
+}
+.home h4{
+    font-family: 'Arial Nova';
+}
+
+.home p {
+    font-family: "Baskervville", serif;
+}
+
+
+.SloganMoneyBlessed h1 {
+    font-size: 2.1em;
+    text-shadow: 0px 2px 5px rgb(103, 101, 101);
+    font-family: "Gowun Batang", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.SloganMoneyBlessed p {
+    text-align: justify;
+}
+
+.btnEffect {
+    background-color: #5A228C;
+    color: white;
+    transition: .5s;
+    font-family: 'Arial Nova';
+    cursor: pointer !important;
+}
+.btnEffect:hover{
+    color: #5A228C;
+    transition: .5s;
+    font-family: 'Arial Nova';
+    cursor: pointer !important;
+    background-color: transparent;
+    border: 1px solid #5A228C;
+}
+
+.btnEffectOutline:hover{
+    background-color: #5A228C;
+    color: white;
+    transition: .5s;
+    font-family: 'Arial Nova';
+    cursor: pointer !important;
+}
+.btnEffectOutline {
+    color: #5A228C;
+    transition: .5s;
+    font-family: 'Arial Nova';
+    cursor: pointer !important;
+    background-color: transparent;
+    border: 1px solid #5A228C;
+}
+
+
+#mockupHeading{
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    /* color: #5A228C; */
+}
+.smClassTxt h2{
+    font-family: "Arial Nova";
+}
+
+
+
+.homeText h1,p,h4{
+    text-align: start;
+}
+
+.classes{
+    /* clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%); */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.24) 20%, rgba(0, 0, 0, 0.395) 60%) , url("../images/stock1.webp");   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Testimonail */
+
+.card-slider {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* width: 60%; */
+    /* transition: .6s; */
+    overflow: hidden;
+    position: relative;
+}
+
+.cards-container {
+    display: flex;
+    /* gap: 8px; */
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    transition: .6s;
+}
+
+.cardd {
+    width: 255px;
+    height: 355px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    background-color: #5A228C;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.cardd::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    top: 20px;
+    right: -30px;
+}
+.cardd::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    top: 20px;
+    right: -25px;
+}
+
+.cardd p{
+    font-size: 12px;
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+    font-family: "Baskervville", serif;
+}
+
+.cardd h6{
+    text-shadow: 0px 2px 10px black;
+    border: 1px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 0px 0px 5px 0px;
+    font-family: "Arial Nova";
+}
+
+.cardd img{
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px black;
+    border: 2px solid white;
+    aspect-ratio: 1/1;
+}
+
+.cardvisible{
+    display: flex;
+    scale: 1;
+    opacity: 1;
+    transition: .5s !important;
+    box-shadow: 0px 2px 15px 4px #5A228C;
+}
+
+.cardlr{
+    display: flex;
+    scale: .7;
+    opacity: .7;
+    transition: .5s !important;
+}
+
+.cardinvisible{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    transform: rotate(20deg);
+    transition: .5s !important;
+}
+
+.testihead{
+    font-family: 'Times New Roman', Times, serif;
+    color: #5A228C;
+}
+
+
+
+@media only screen and (max-width: 786px) {
+    .callbackbutton{
+        transform: translate(0px);
+    }
+    .homeText h1{
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+    .homeText h4{
+        text-align: center;
+    }
+    .homeText p{
+        text-align: center;
+    }
+    #followUsHead{
+        text-align: center;
+    }
+    #mockupHeading{
+        font-size: 2.8rem;
+        font-family: "omegle", sans-serif;
+        /* color: #5A228C; */
+    }
+    .classesIcon{
+        /* background-image: url("../images/mockup_Samsung-01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 110vh; */
+
+    }
+    
+}

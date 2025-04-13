@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../font/ArialNova.ttf');
+}
+
+
+.contactUsHead h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #5A228C;
+    font-size:3rem;
+}
+
+.contactUsHead p{
+    font-family: "Baskervville", serif;
+}
+
+
+i{
+    /* color: white; */
+    background-color:#5A228C;
+    padding: 20px;
+    aspect-ratio: 3/3;
+    border-radius: 100%;
+}
+
+h6{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.textBody{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.linkTree h2,h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #5A228C;
+}

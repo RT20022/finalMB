@@ -1,0 +1,203 @@
+body {
+    overflow-x: hidden;
+}
+
+/* FADE IN  */
+.fade_in {
+    opacity: 0;
+}
+
+.fade_in_anime {
+    animation-name: fade_in_animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_animation {
+    form {
+        transform: translate(0px, 20px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* LEFT IN ANIAMTION */
+.left_in {
+    opacity: 0;
+    transform: translate(-20px, 0px);
+}
+
+.left_in_anime {
+    animation-name: left_in_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left_in_animation {
+    form {
+        opacity: 0;
+        transform: translate(-20px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* RIGHT IN ANIAMTION */
+.right_in {
+    opacity: 0;
+    transform: translate(20px, 0px);
+}
+
+.right_in_anime {
+    animation-name: right_in_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right_in_animation {
+    form {
+        opacity: 0;
+        transform: translate(20px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* DOWN IN ANIAMTION */
+.down_in {
+    opacity: 0;
+    transform: translate(0px, 20px);
+}
+
+.down_in_anime {
+    animation-name: down_in_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes down_in_animation {
+    form {
+        opacity: 0;
+        transform: translate(20px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+/* TOP IN ANIAMTION */
+.top_in {
+    opacity: 0;
+    transform: translate(0px, -30px);
+}
+
+.top_in_anime {
+    animation-name: top_in_animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes top_in_animation {
+    form {
+        opacity: 0;
+        transform: translate(-30px, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .bgColor {
+        box-shadow: none;
+        opacity: 0;
+    }
+
+    .bgColor_anime {
+        animation-name: bgColor_anime;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+
+    .donationButton {
+        background: rgb(255, 126, 126);
+        background: linear-gradient(124deg, rgba(255, 126, 126, 1) 13%, rgba(250, 202, 202, 1) 96%);
+    }
+
+    .donationButton_anime {
+        animation-name: donationButton_anime;
+        animation-duration: .5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+/* bgColor Animation */
+
+
+@keyframes bgColor_anime {
+    form {
+        box-shadow: 2px 2px 20px rgb(255, 253, 253);
+        opacity: 0;
+    }
+
+    to {
+        box-shadow: 2px 2px 20px pink;
+        opacity: 1;
+    }
+}
+
+
+@keyframes donationButton_anime {
+    form {
+        background: rgb(255, 126, 126);
+        background: linear-gradient(124deg, rgba(255, 126, 126, 1) 13%, rgba(250, 202, 202, 1) 96%);
+        transform: scale(.8);
+    }
+
+    to {
+        box-shadow: 2px 2px 20px rgb(9, 252, 216);
+        transform: scale(1);
+    }
+}
+
+/* flip animation */
+
+.flip {
+    opacity: 0;
+    transform: rotateX(120deg);
+}
+
+.flip_anime {
+    animation-name: flip_anime;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+    /* animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); */
+}
+
+@keyframes flip_anime {
+    form {
+        transform: rotateX(120deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}

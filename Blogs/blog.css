@@ -1,0 +1,35 @@
+.blogContainer{
+    padding-top: 9%;
+    background-color: #5A228C;
+}
+
+
+
+.blogContainer input:focus{
+    outline: none;
+}
+.blogContainer input::placeholder{
+    color: white;
+}
+
+.blogContainer h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.allblogs a{
+    background-color: #5A228C;
+    color: white;
+    transition: .3s;
+}
+
+.allblogs a:hover{
+    background-color: #000000;
+    color: white;
+    transition: .3s;
+}
+
+@media only screen and (max-width: 786px) {
+    .blogContainer{
+        padding-top: 20%;
+    }
+}

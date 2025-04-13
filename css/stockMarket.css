@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Arial Nova';
+    src: url('../font/ArialNova.ttf');
+}
+
+
+.smClassBg{
+    background: url("../images/blob1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.smClassTxt h2{
+    font-size: 3.2em;
+    /* text-shadow: 2px 2px 12px rgb(113, 110, 110); */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* .classes{
+    height:90vh;
+} */
+.classes h2{
+     font-family: "Philosopher", sans-serif;
+    text-shadow: none;
+    font-weight: lighter !important;
+}
+
+.classes h5{
+    font-family: "Itim", cursive;
+}
+
+.classes marquee:nth-child(3) h5 span{
+    color: #5A228C;
+    transition: .5s;
+    font-family: "Philosopher", sans-serif;
+    background-color: transparent;
+    border: 1px solid #5A228C;
+    margin-left: 5px;
+    padding: 8px;
+}
+.classes marquee:nth-child(2) h5 span{
+    background-color: #5A228C;
+    color: white;
+    transition: .5s;
+    font-family: "Philosopher", sans-serif;
+    margin-left: 5px;
+    padding: 8px;
+}
+
+
+
+.classes p{
+    font-size: 18px;
+    font-family: 'Arial Nova';
+}
+
+.ourmentorship ul li{
+    font-size: 14px;
+    font-family: "Baskervville", serif;
+}
+.ourmentorship h2{
+    font-family:'Times New Roman', Times, serif;
+}
+.ourmentorshipImg1{
+    background: url("../images/stock1.webp");
+    font-family:'Times New Roman', Times, serif;
+   
+}
+.ourmentorshipImg2{
+    background: url("../images/stock2.webp");
+   
+}
+.ourmentorshipImg3{
+    background: url("../images/stock3.webp");
+}
+.ourmentorshipImg4{
+    background: url("../images/stock4.webp");
+}
+.ourmentorshipImg5{
+    background: url("../images/stock5.webp");
+}
+.ourmentorshipImg6{
+    background: url("../images/stock6.webp");
+}
+.ourmentorshipImg7{
+    background: url("../images/stock7.webp");
+}
+.ourmentorshipImg8{
+    background: url("../images/stock8.jpg");
+}
+.ourmentorshipImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 11rem;
+}
